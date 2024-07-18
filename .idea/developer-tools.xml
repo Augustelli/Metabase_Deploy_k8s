@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DeveloperToolsToolWindowSettingsV1" lastSelectedContentNodeId="base64-encoder-decoder">
+    <developerToolsConfigurations>
+      <developerToolConfiguration developerToolId="password-generator" id="2e6f148d-bc34-41e7-85aa-04fa1856d6d2" name="Workbench">
+        <properties>
+          <property key="symbols" type="CONFIGURATION" value="kotlin.String|~!@#$%&amp;*()_-+={[}]|" />
+        </properties>
+      </developerToolConfiguration>
+      <developerToolConfiguration developerToolId="base64-encoder-decoder" id="2d5ba14b-7f71-4f45-a8a5-ba7fe60a3cd7" name="Workbench">
+        <properties>
+          <property key="sourceText" type="INPUT" value="kotlin.String|root" />
+          <property key="targetText" type="INPUT" value="kotlin.String|cm9vdA==" />
+        </properties>
+      </developerToolConfiguration>
+    </developerToolsConfigurations>
+  </component>
+</project>
