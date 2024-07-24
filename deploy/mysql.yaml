@@ -103,9 +103,9 @@ spec:
               
               mysql -h mysql -u root -proot <<EOF
               CREATE DATABASE IF NOT EXISTS google;
-              ALTER USER 'metabase'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
-              GRANT ALL PRIVILEGES ON metabase.* TO 'root'@'%';
-              GRANT ALL PRIVILEGES ON google.* TO 'root'@'%';
+              ALTER USER 'metabase'@'%' IDENTIFIED WITH mysql_native_password BY 'metabase';
+              GRANT ALL PRIVILEGES ON metabase.* TO 'metabase'@'%';
+              GRANT ALL PRIVILEGES ON google.* TO 'metabase'@'%';
               FLUSH PRIVILEGES;
               EOF
               

@@ -9,8 +9,8 @@
       </developerToolConfiguration>
       <developerToolConfiguration developerToolId="base64-encoder-decoder" id="2d5ba14b-7f71-4f45-a8a5-ba7fe60a3cd7" name="Workbench">
         <properties>
-          <property key="sourceText" type="INPUT" value="kotlin.String|google" />
-          <property key="targetText" type="INPUT" value="kotlin.String|Z29vZ2xl" />
+          <property key="sourceText" type="INPUT" value="kotlin.String|metabase" />
+          <property key="targetText" type="INPUT" value="kotlin.String|bWV0YWJhc2U=" />
         </properties>
       </developerToolConfiguration>
     </developerToolsConfigurations>
