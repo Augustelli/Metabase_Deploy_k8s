@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8375a809-a4a7-4969-80ae-eff569f8a53e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/ingress.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/metabase-app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/metabase-app.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/mysql.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/ingress.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/metabase-app.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/metabase.secret.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/mysql.secret.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/mysql.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/augustelli/caso_3_cloud_native",
+    "last_opened_file_path": "/home/augustelli/caso_3_cloud_native/deployment",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +48,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deployment" />
       <recent name="$PROJECT_DIR$/infra" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -62,7 +65,7 @@
       <updated>1721254205782</updated>
       <workItem from="1721254206980" duration="10862000" />
       <workItem from="1721683282731" duration="3356000" />
-      <workItem from="1721695723725" duration="8006000" />
+      <workItem from="1721695723725" duration="10714000" />
     </task>
     <servers />
   </component>

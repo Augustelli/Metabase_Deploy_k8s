@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metabase-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: metabase
+  template:
+    metadata:
+      labels:
+        app: metabase
+    spec:
+      initContainers:
+        - name: wait-for-mysql
+          image: busybox 
+          command: ['sh','-c','while ! nc -z kb-mysql 3306; do echo waiting for kb-mysql; sleep 2; done;',]
+      containers:
+      - name: metabase
+        image: metabase/metabase:latest
+        ports:
+        - containerPort: 3000
+        livenessProbe:
+          httpGet:
+            path: /api/health
+            port: 3000
+          initialDelaySeconds: 120
+          periodSeconds: 10
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /api/health
+            port: 3000
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          failureThreshold: 3
+        envFrom:
+        - configMapRef:
+            name: metabase-config
+        - secretRef:
+            name: metabase-secret
+        env:
+        - name: MB_ADMIN_EMAIL
+          valueFrom:
+            secretKeyRef:
+              name: metabase-secret
+              key: ADMIN_EMAIL
+        - name: MB_ADMIN_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: metabase-secret
+              key: ADMIN_PASSWORD

@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
+  name: mb-ingress
+spec:
+  rules:
+  - host: augusto-mancuso-mb.my.kube.um.edu.ar
+    http:
+      paths:
+      - backend:
+          service:
+            name: kb-metabase
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+
+
+
+
