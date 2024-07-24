@@ -11,13 +11,6 @@ spec:
         path: "/"
         backend:
           service:
-            name: metabase-svc
+            name: kb-metabase
             port:
               number: 80
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: metabase-svc
-            port:
-              number: 443
