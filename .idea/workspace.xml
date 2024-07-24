@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8375a809-a4a7-4969-80ae-eff569f8a53e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/deploy/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/metabase-app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/metabase-app.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <updated>1721254205782</updated>
       <workItem from="1721254206980" duration="10862000" />
       <workItem from="1721683282731" duration="3356000" />
-      <workItem from="1721695723725" duration="4980000" />
+      <workItem from="1721695723725" duration="5496000" />
     </task>
     <servers />
   </component>
