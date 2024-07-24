@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/developer-tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/developer-tools.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/mysql.secret.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/mysql.secret.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/mysql.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <updated>1721254205782</updated>
       <workItem from="1721254206980" duration="10862000" />
       <workItem from="1721683282731" duration="3356000" />
-      <workItem from="1721695723725" duration="2816000" />
+      <workItem from="1721695723725" duration="3456000" />
     </task>
     <servers />
   </component>
