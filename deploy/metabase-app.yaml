@@ -131,8 +131,8 @@ spec:
                   -d '{
                     "token": "'$SETUP_TOKEN'",
                     "user": {
-                      "first_name": "augusto",
-                      "last_name": "kark",
+                      "first_name": "Augusto",
+                      "last_name": "Mancuso",
                       "email": "'$ADMIN_EMAIL'",
                       "password": "'$ADMIN_PASSWORD'",
                       "password_confirm": "'$ADMIN_PASSWORD'"

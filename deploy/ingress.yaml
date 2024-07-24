@@ -1,16 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: metabase-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
+  name: kb-ing
 spec:
   rules:
-  - host: a.mancuso.my.kube.um.edu.ar
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: kb-metabase
-            port:
-              number: 80
+    - host: amancuso.my.kube.um.edu.ar  # Change this to your domain
+      http:
+        paths:
+          - backend:
+              service:
+                name: kb-metabase
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
