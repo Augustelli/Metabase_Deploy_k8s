@@ -5,7 +5,7 @@ metadata:
   name: metabase-config
 data:
   MB_DB_TYPE: mysql
-  MB_DB_HOST: mysql
+  MB_DB_HOST: kb-mysql
   MB_DB_PORT: "3306"
   MB_DB_DBNAME: metabase
 ---
@@ -14,13 +14,12 @@ data:
 apiVersion: v1
 kind: Service
 metadata:
-  name: metabase-svc
+  name: kb-metabase
 spec:
   selector:
     app: metabase
   ports:
-    - protocol: TCP
-      port: 80
+    - port: 80
       targetPort: 3000
 ---
 # Deployment
@@ -41,7 +40,7 @@ spec:
       initContainers:
         - name: wait-for-mysql
           image: busybox
-          command: ['sh','-c','while ! nc -z mysql 3306; do echo waiting for mysql; sleep 2; done;',]
+          command: ['sh','-c','while ! nc -z kb-mysql 3306; do echo waiting for kb-mysql; sleep 2; done;',]
       containers:
         - name: metabase
           image: metabase/metabase:latest
